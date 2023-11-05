@@ -1,0 +1,375 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    scroll-behavior: smooth;
+    scroll-padding-top: 8vh;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+p > a {
+    font-weight: unset;
+}
+
+* {
+    
+    font-family: 'Geologica', sans-serif;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+body {
+    background-color: #C2CACD;
+    color: aliceblue;
+}
+
+
+/* HEADER */
+
+header.header {
+    min-height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    background-color: #7f9fc0;
+    border-bottom: 1px solid #b1c4d6;
+    font-size: 1.6rem;
+    font-weight: bold;
+
+}
+
+
+
+.logo_img {
+   height: 8vh;
+}
+
+.logo_container {
+    height: 8vh;
+}
+
+.lang_label {
+    font-size: 1.2rem;
+    display: inline;
+    font-weight: normal;
+}
+
+select {
+    appearance: none;
+    border: 1px solid rgb(201, 223, 233);
+    border-radius: 2px;
+    outline: none;
+    font-size: 1rem;
+    background-color: #a5cbee;
+    padding: 2px;
+    
+}
+
+option {
+    font-size: 1rem;    
+}
+
+
+a {
+    color: #fac395;
+}
+
+a:hover {
+    color: #E66F14;
+    transform: scale(1.03);
+}
+
+.nav-item {
+    display: inline-block;
+    padding-right: 20px;
+    color: rgb(206, 230, 230);
+    transition: .4s ease;
+}
+
+/* HEADER */
+
+
+
+/* MAIN */
+
+main {
+    max-width: 1000px;
+    margin: 8vh auto 0;
+    background-color: #8a9ba7;
+    text-align: justify;
+    font-size: 1.3rem;
+}
+
+section {
+    padding: 30px;
+    border-bottom: 1px solid #62717c;
+    font-weight: 200;
+}
+
+h1,h2,h3 {
+    color: rgb(247, 247, 197);
+    padding: 12px 0;
+}
+
+h4 {
+    padding: 10px 0; 
+}
+
+.main_img {
+    display: block;
+    width: 240px;
+    object-fit: contain;
+}
+
+.about-game {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.about-game-container {
+    flex:50%;
+}
+
+.letsplay {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #e99250;
+    font-size: 2rem;
+}
+
+.game_img {
+    display: block;
+    margin: auto;
+    max-width: 300px;
+    height: auto;
+}
+
+label, .submit {
+    display: block;
+    font-weight: bold;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    border: unset;
+}
+
+.form   {
+    display: flex;
+    flex-direction: column;
+    background-color: #5a99d3;
+    border-radius: 5px;
+    border: 1px solid #5780a8;
+    font-size: 1.5rem;
+    width: 500px;
+    
+}
+
+input {
+    display: block;
+    width: 80%;
+    margin: 1vh auto;
+    border: 1px solid #5780a8;
+    border-radius: 4px;
+    outline: none;
+    font-size: 1rem;
+}
+
+.textarea {
+    outline: none;
+    border: 1px solid #5780a8;
+    display: block;
+    border-radius: 4px;
+    width: 80%;
+    margin: 2vh auto;
+    resize: none;
+}
+
+.submit {
+    width: 60%;
+    margin: 2vh auto;
+    background-color: #437fb8;
+    color: #e2eaf1;
+    border: 1px solid #365c83;
+}
+
+/* MAIN */
+
+
+/* FOOTER */
+
+.footer {
+    min-height: 6vh;
+    background-color: #7f9fc0;
+    border-top: 1px solid #b1c4d6;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    max-width: 1000px;
+    margin: 0 auto 0;
+}
+
+/* FOOTER */
+
+
+
+/* SCROLL BUTTON */
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgb(84, 74, 138); /* Set a background color */
+    opacity: 30%;
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 2.5rem; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+
+  /* SCROLL BUTTON */
+
+
+
+  /* MEDIA QUERIES */
+
+@media screen and (max-width: 1050px) {
+    header.header {
+        font-size: 1.2rem;
+    }
+
+    select {
+        font-size: .8rem;
+        padding: 1px;
+    }
+
+    option {
+        font-size: .8rem;    
+    }
+
+    .lang_label {
+        font-size: 1.1rem;
+    }
+
+    .nav-item {
+        padding-right: 10px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    html {
+        scroll-padding-top: unset;
+    }
+
+    header.header {
+        flex-wrap: wrap;
+        position: unset;
+        top: unset;
+    }
+
+    nav {
+        flex: 100%;
+        display: flex;
+        justify-content: space-around;
+        border-top: 1px solid #b1c4d6;
+        padding-top: .3vh;
+        padding-bottom: .3vh;
+    }
+
+    .nav-item {
+        padding-right: unset;
+        font-size: 1.25rem;
+    }
+
+    .lang_label {
+        display: none;
+    }
+
+    .language_container {
+        margin-right: 5vw;
+    }
+
+    header.header {
+        background-color: #82a5c7;
+    }
+
+    select {
+        background-color: #5a99d3;        
+    }
+
+    .nav-item {
+        color: rgb(223, 238, 238);
+    }
+
+    main {
+        margin: unset;
+    }
+
+    section {
+        padding-left: 4vw;
+        padding-right: 4vw;
+    }
+    
+    .form {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    nav {
+        margin-bottom: unset;
+    }
+
+    .nav-item {
+        padding-right: unset;
+        font-size: .9rem;
+    }
+
+    .game_img {
+        max-width: 90%;
+    }
+}
+
+/* MEDIA QUERIES */

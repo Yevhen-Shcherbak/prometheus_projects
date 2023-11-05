@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" id="htmlLang">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100;200;300;400;500;600;700;800;900&family=Kanit:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Noto+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo_container"><img src="images/logo.png" alt="logo" class="logo_img">
+        </div>
+        <div class="language_container">
+            <label for="langDropdown" class="lang_label" id="langLabelLink">language:</label>
+            <select id="langDropdown" class="Lang_dropdown" onchange="langSwitcher()">
+                <option value="en" class="en" id="engLang">English</option>
+                <option value="uk" class="uk" id="ukrLang">Українська</option>
+            </select>
+        </div>
+        <nav>
+            <a href="#about" class="nav-item" id="aboutLink">About me</a>
+            <a href="#about_game" class="nav-item" id="aboutGameLink">About 2048</a>
+            <a href="#game" class="nav-item" id="gameLink">Game</a>
+            <a href="#form" class="nav-item" id="formLink">Contact me</a>
+        </nav>
+    </header>
+    <main>
+        <section class="about_me" id="about">
+            <h2 class="welcome_header" id="welcomeHeader">Welcome to my page!</h2>
+            <p id="topPar">
+                <span id="beforeLink1">My name is Yevhen Shcherbak and my goal is to become a professional frontend developer. I've been studying on my own for some time, now I do it with the help of </span><a href="https://prometheus.org.ua/" target="_blank">Prometheus</a><span id="afterLink1">. It is widely known that progress is impossible without practice and one of the best ways to do that are personal projects. Mini-game 2048 is a great example of such a project. So this is what this page about 🙂</span>
+            </p>
+        </section>
+        <section class="about-game" id="about_game">
+            <div class="about-game-container">
+                <h3 class="About-2048" id="aboutGameHeader">About the game</h3>
+                <p id="aboutGameP">
+                    <span id="beforelink2">2048 is a 4x4 tile game created by web developer </span><a href="https://github.com/gabrielecirulli" target="_blank" id="gabriel">Gabriel Cirulli</a><span id="afterLink2">. The goal of the game is to combine numbers to create bigger number tiles in order to get to the magic number, 2048.</span>
+                </p>
+                <h4 class="rules_header" id="rulesHeader">Rules</h4>
+                <p id="rulesP">
+                    The rules of how to play 2048 are simple. You have four ways to move the tiles: left, right, up, and down. You combine numbers like 2 and 2 to make a 4 tile, 4 and 4 to make an 8 tile, and so on and so forth.
+                    A low number such as a 2 or 4 will appear in a random spot with every move you make. This makes the board fill up faster, and the rows more difficult to move as the game goes on.
+
+                </p>
+            </div>
+            <div class="image-container">
+                <img src="images/main.gif" alt="" class="main_img">
+            </div>    
+        </section>
+        <section class="game" id="game">
+            <h3 class="letsplay" id="lstPlayHeader">Let's play 2048!</h4>
+            <img src="images/game.png" alt="" class="game_img">
+        </section>
+        <section class="form-container" id="form">
+            <div class="form">
+                <h2 class="contact_me" id="contactMeHeader">Contact me</h2>
+                <form action="/action_page.php">
+                    <label for="fname" id="nameLabel">Your name:</label>
+                    <input type="text" id="fname" name="fname">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                    <label for="message" id="messageLabel">Message:</label>
+                    <textarea id="message" name="text" class="textarea" rows="4"></textarea>
+                    <input type="submit" value="Submit" class="submit" id="submit">
+                </form>
+            </div>            
+        </section>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">&#8593;</button>
+    </main>
+    <footer class="footer">
+        <p class="foot">&#169; Yevhen Shcherbak</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
